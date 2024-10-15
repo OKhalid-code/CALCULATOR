@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style/calculator.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="icon" href="./images/icon/keys.png">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+
+
+        <div class="screen">
+            <input id="display" value="0" disabled>
+        </div>
+
+        <button onclick="clearDisplay()" class="grid-item resed" id="btn" style="background: coral;">RESET</button>
+        <button onclick="deleteLastCharacter()" class="grid-item resed" id="btn" style="background: #ff4a4a;">DEL</button>
+        <button onclick="appendToDisplay('/')" class="grid-item" id="btn" style="line-height: 1;">÷</button>
+        <button onclick="appendToDisplay('*')" class="grid-item" id="btn" style="line-height: 1.4;">×</button>
+        <button onclick="appendToDisplay('+')" class="grid-item4">+</button>
+        <button onclick="appendToDisplay('7')" class="grid-item">7</button>
+        <button onclick="appendToDisplay('8')" class="grid-item">8</button>
+        <button onclick="appendToDisplay('9')" class="grid-item">9</button>
+        <button onclick="appendToDisplay('4')" class="grid-item">4</button>
+        <button onclick="appendToDisplay('5')" class="grid-item">5</button>
+        <button onclick="appendToDisplay('6')" class="grid-item">6</button>
+        <button onclick="appendToDisplay('1')" class="grid-item">1</button>
+        <button onclick="appendToDisplay('2')" class="grid-item">2</button>
+        <button onclick="appendToDisplay('3')" class="grid-item">3</button>
+        <button onclick="appendToDisplay('0')" class="grid-item" id="zero">0</button>
+        <button onclick="appendToDisplay('.')" class="grid-item15">.</button>
+        <button onclick="calculate()" class="grid-item" id="equal">=</button>
+        <button onclick="appendToDisplay('-')" class="grid-item17">-</button>
+
+    </div>
+
+
+    <script src="./script/calculator.js"></script>
+</body>
+
+</html>

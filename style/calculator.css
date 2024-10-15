@@ -1,0 +1,122 @@
+:root {
+    --blue: #01637c;
+    --hovercolor: #004353;
+    --active: #00303f;
+}
+
+* {
+    box-sizing: border-box;
+    font: 24px "Rubik";
+    color: white;
+}
+
+input {
+    background: none;
+}
+
+input {
+    text-align: left;
+    margin-top: 0.4cm;
+    padding-top: 6px;
+    padding-left: 8px;
+    border: none;
+    font-size: 40px;
+    width: 338px;
+    letter-spacing: 3px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    grid-template-rows: 80px 80px 80px 80px;
+    height: 600px;
+    width: 380px;
+    border-radius: 40px 40px 65px 65px;
+    align-content: center;
+    gap: 4px;
+    padding: 10px;
+    background: var(--blue);
+    border: 2px solid black;
+    outline: 6px solid var(--blue);
+    box-shadow: 0 25px 50px -12px rgb(0, 0, 0);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.grid-container>button {
+    margin-left: 0.12cm;
+    cursor: pointer;
+    background: #00566b;
+    border: 1px solid var(--hovercolor);
+    text-align: center;
+    line-height: 2.8;
+    border-radius: 50%;
+    width: 69px;
+    height: 69px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background: var(--hovercolor);
+}
+
+.screen {
+    grid-column: 1 / 5;
+    border-radius: 20px;
+    background-color: #796e40;
+    text-align: right;
+    border: 1px solid black;
+    justify-self: center;
+    width: 340px;
+    height: 100px;
+    margin-top: -0.2cm;
+}
+
+#zero {
+    grid-column: 1 / 3;
+    width: 150px;
+    border-radius: 50px;
+}
+
+#equal {
+    grid-area: 5 / 4 / 7 / 5;
+    height: 165px;
+    width: 70px;
+    border-radius: 50px;
+    line-height: 7;
+}
+
+.grid-item4 {
+    grid-area: 4 / 4 / 5 / 5;
+}
+
+.grid-item17 {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+#btn {
+    width: 70px;
+    height: 38px;
+    border-radius: 10px;
+    margin-top: 1.1cm;
+    line-height: 1.6;
+}
+
+.resed {
+    font-size: 20px;
+}
+
+.grid-item15 {
+    grid-column: 3 / 4;
+}
+
+[class*="grid-item"] {
+    margin-top: 0.5cm;
+}
+
+[class*="grid-item"]:active {
+    background: var(--active);
+}
